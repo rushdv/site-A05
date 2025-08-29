@@ -21,18 +21,18 @@
 
 <body>
 
-    <nav class="flex justify-between p-3 px-15">
+    <nav class="flex justify-between p-3 md:px-15">
         <div class="flex justify-center items-center">
             <img class="w-15 h-15" src="./images/logo.png" alt="">
-            <h2 class="text-3xl ml-3 font-bold text-[#006747]">Emergency <br>Service</h2>
+            <h2 class="text-lg md:text-2xl ml-2 font-bold text-[#006747]">Emergency <br>Service</h2>
         </div>
 
-        <div class="flex gap-5">
-            <div class="bg-[#ECFFF0] flex p-3 rounded-full text-center items-center justify-center my-auto font-bold w-25"><span id="heart">0</span><img
+        <div class="flex gap-2 md:gap-4">
+            <div class="bg-[#ECFFF0] flex p-3 rounded-full text-center items-center justify-center my-auto font-bold md:w-25"><span id="heart">0</span><img
                     class="w-6 ml-2" src="./images/heart.png" alt=""></div>
-            <div class="bg-[#ECFFF0] flex p-3 rounded-full text-center my-auto font-bold w-25 items-center justify-center"><span id="coin">100</span><img
+            <div class="bg-[#ECFFF0] flex p-3 rounded-full text-center my-auto font-bold md:w-25 items-center justify-center"><span id="coin">100</span><img
                     class="w-6 ml-2" src="./images/coin.png" alt=""></div>
-            <div class="bg-[#00A63E] p-3 rounded-full text-center my-auto font-bold w-30 text-white"><span id="copy-count">2</span> Copy</div>
+            <div class="bg-[#00A63E] p-3 rounded-full text-center my-auto font-bold md:w-30 text-white"><span id="copy-count">2</span> Copy</div>
         </div>
     </nav>
 
@@ -45,11 +45,12 @@
     </section>
 
     <!-- main section -->
-    <main class="bg-[#F5FFF6] p-20 grid grid-cols-4  gap-10">
+    <main class="bg-[#F5FFF6] p-5 md:p-10 lg:p-20 
+            grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-10">
 
 
         <!-- National Emergency Number  -->
-        <div class="w-120 p-7 bg-white rounded-xl shadow-lg">
+        <div class="w-full max-w-sm mx-auto p-6 md:p-7 bg-white rounded-xl shadow-lg">
             <div class="flex justify-between">
                 <img class="w-10 h-10 bg-[#FFE3E1] p-2 rounded-xl" src="./images/emergency.png" alt="">
                 <p><i  class="heart-icon fa-regular fa-heart text-[#5C5C5C]"></i></p>
@@ -70,7 +71,7 @@
         </div>
 
         <!-- police helpline -->
-        <div class="w-120 p-7 bg-white rounded-xl shadow-lg">
+        <div class="w-full max-w-sm mx-auto p-6 md:p-7 bg-white rounded-xl shadow-lg">
             <div class="flex justify-between">
                 <img class="w-10 h-10 bg-[#FFE3E1] p-2 rounded-xl" src="./images/police.png" alt="">
                 <p><i class="heart-icon fa-regular fa-heart text-[#5C5C5C]"></i></p>
@@ -91,7 +92,7 @@
         </div>
 
         <!-- fire service  -->
-        <div class="w-120 p-7 bg-white rounded-xl shadow-lg">
+        <div class="w-full max-w-sm mx-auto p-6 md:p-7 bg-white rounded-xl shadow-lg">
             <div class="flex justify-between">
                 <img class="w-10 h-10 bg-[#FFE3E1] p-2 rounded-xl" src="./images/fire-service.png" alt="">
                 <p><i class="heart-icon fa-regular fa-heart text-[#5C5C5C]"></i></p>
@@ -112,7 +113,7 @@
         </div>
 
         <!-- call history  -->
-        <div class="w-120 p-7 bg-white   rounded-xl shadow-lg row-span-3">
+        <div class="w-full max-w-sm mx-auto p-6 md:p-7 bg-white rounded-xl shadow-lg row-span-3">
             <div class="flex justify-between">
                 <h2 class="font-semibold"><i class="fa-regular fa-clock text-[#5C5C5C]"></i> Call History</h2>
             <button id="clear-history" class="w-20 btn bg-[#00A63E] text-white rounded-3xl p-1">Clear</button>
@@ -124,7 +125,7 @@
         </div>
 
         <!-- ambulance  -->
-        <div class="w-120 p-7 bg-white rounded-xl shadow-lg">
+        <div class="w-full max-w-sm mx-auto p-6 md:p-7 bg-white rounded-xl shadow-lg">
             <div class="flex justify-between">
                 <img class="w-10 h-10 bg-[#FFE3E1] p-2 rounded-xl" src="./images/ambulance.png" alt="">
                 <p><i class="heart-icon fa-regular fa-heart text-[#5C5C5C]"></i></p>
@@ -145,7 +146,7 @@
         </div>
 
         <!-- Women & Child Helpline  -->
-        <div class="w-120 p-7 bg-white rounded-xl shadow-lg">
+        <div class="w-full max-w-sm mx-auto p-6 md:p-7 bg-white rounded-xl shadow-lg">
             <div class="flex justify-between">
                 <img class="w-10 h-10 bg-[#FFE3E1] p-2 rounded-xl" src="./images/emergency.png" alt="">
                 <p><i class="heart-icon fa-regular fa-heart text-[#5C5C5C]"></i></p>
@@ -166,7 +167,7 @@
         </div>
 
         <!-- Anti-Corruption Helpline  -->
-        <div class="w-120 p-7 bg-white rounded-xl shadow-lg">
+        <div class="w-full max-w-sm mx-auto p-6 md:p-7 bg-white rounded-xl shadow-lg">
             <div class="flex justify-between">
                 <img class="w-10 h-10 bg-[#FFE3E1] p-2 rounded-xl" src="./images/emergency.png" alt="">
                 <p><i class="heart-icon fa-regular fa-heart text-[#5C5C5C]"></i></p>
@@ -188,7 +189,7 @@
 
 
         <!-- Electricity Helpline  -->
-        <div class="w-120 p-7 bg-white rounded-xl shadow-lg">
+        <div class="w-full max-w-sm mx-auto p-6 md:p-7 bg-white rounded-xl shadow-lg">
             <div class="flex justify-between">
                 <img class="w-10 h-10 bg-[#FFE3E1] p-2 rounded-xl" src="./images/emergency.png" alt="">
                 <p><i class="heart-icon fa-regular fa-heart text-[#5C5C5C]"></i></p>
@@ -210,7 +211,7 @@
 
 
         <!-- Brac Helpline  -->
-        <div class="w-120 p-7 bg-white rounded-xl shadow-lg">
+        <div class="w-full max-w-sm mx-auto p-6 md:p-7 bg-white rounded-xl shadow-lg">
             <div class="flex justify-between">
                 <img class="w-10 h-10 bg-[#FFE3E1] p-2 rounded-xl" src="./images/emergency.png" alt="">
                 <p><i class="heart-icon fa-regular fa-heart text-[#5C5C5C]"></i></p>
@@ -232,7 +233,7 @@
 
 
         <!-- Bangladesh Railway Helpline  -->
-        <div class="w-120 p-7 bg-white rounded-xl shadow-lg">
+        <div class="w-full max-w-sm mx-auto p-6 md:p-7 bg-white rounded-xl shadow-lg">
             <div class="flex justify-between">
                 <img class="w-10 h-10 bg-[#FFE3E1] p-2 rounded-xl" src="./images/emergency.png" alt="">
                 <p><i class="heart-icon fa-regular fa-heart text-[#5C5C5C]"></i></p>
