@@ -62,41 +62,45 @@ for (let i = 0; i < callButtons.length; i++) {
         } else {
             coins.innerText = 0;
             alert("Not enough coins!");
-            return; // coin na thakle history add hobe na
+            return; 
         }
 
         // History entry div create
         const entry = document.createElement("div");
-        entry.classList.add("history-entry", "p-3","mb-3","rounded-lg","text-xl","font-semibold" ,"bg-[#F5FFF6]", "flex", "justify-between", "items-center");
+        entry.classList.add(
+            "history-entry",
+            "p-3",
+            "mb-3",
+            "rounded-lg",
+            "text-xl",
+            "font-semibold",
+            "bg-[#F5FFF6]",
+            "flex",
+            "justify-between",
+            "items-center"
+        );
 
         // left side: service name + number
         const leftDiv = document.createElement("div");
         leftDiv.classList.add("flex", "flex-col");
 
-        // service name
         const serviceEl = document.createElement("div");
         serviceEl.innerText = service;
         serviceEl.classList.add("font-bold");
-
-        // number
+        
         const numberEl = document.createElement("div");
         numberEl.innerText = number;
-        numberEl.classList.add( );
-
-        // append service + number to leftDiv
+        
         leftDiv.appendChild(serviceEl);
         leftDiv.appendChild(numberEl);
 
-        // right side: time
+        // right side - time
         const timeEl = document.createElement("div");
         timeEl.innerText = getCurrentTime();
-        timeEl.classList.add();
 
-        // append left + right to entry
         entry.appendChild(leftDiv);
         entry.appendChild(timeEl);
 
-        // prepend to history list
         historyList.prepend(entry);
 
     });
